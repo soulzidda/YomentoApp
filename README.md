@@ -7,8 +7,6 @@ you may want to start the metro bundler automatically before running the applica
 
 1. Navigate to the root directory and use yarn start
 
-if you have 
-
 # Iphone Usage 
 
 1. First navigate to the root directory and run yarn install.
