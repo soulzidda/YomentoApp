@@ -1,4 +1,4 @@
-export const SPACING = {
+export const spacing = {
   none: 0,
   xxs: 2,
   xs: 4,

@@ -2,7 +2,7 @@ import React from 'react'
 import {StyleSheet, View} from 'react-native'
 import {Gradient} from '../../components/LinearGradient/LinearGradient.component'
 import {GoalCounterComponent} from '../../components/GoalCounter/GoalCounter.component'
-import {SPACING} from '../../style/spacing'
+import {spacing} from '../../style/spacing'
 import {ReminderBell} from '../../components/ReminderBell/ReminderBell.component'
 import {HorizontalScrollBar} from '../../components/HorizontalScrollBar/HorizontalScrollBar.component'
 
@@ -14,11 +14,11 @@ export const HomeScreen = () => {
         <GoalCounterComponent />
       </View>
       <View style={styles.flatList_spacing}>
-        <View style={{paddingBottom: SPACING.xxl}}>
-          <HorizontalScrollBar header={'large horizontal scroll'} size={'large'} />
+        <View style={styles.padding}>
+          <HorizontalScrollBar header={'Small horizontal scroll'} size={'small'} />
         </View>
-        <View>
-          <HorizontalScrollBar header={'small horizontal scroll'} size={'small'} />
+        <View style={styles.padding}>
+          <HorizontalScrollBar header={'Large horizontal scroll'} size={'large'} />
         </View>
       </View>
     </Gradient>
@@ -30,9 +30,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   goal_container: {
-    paddingHorizontal: SPACING.xxl,
-    paddingTop: SPACING.xxl,
-    paddingBottom: SPACING.l,
+    paddingHorizontal: spacing.xxl,
+    paddingTop: spacing.xxl,
+    paddingBottom: spacing.l,
   },
-  flatList_spacing: {paddingVertical: SPACING.m, paddingLeft: SPACING.m},
+  padding: {paddingBottom: spacing.xxl},
+  flatList_spacing: {paddingVertical: spacing.m, paddingHorizontal: spacing.m},
 })

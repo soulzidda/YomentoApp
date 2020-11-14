@@ -1,7 +1,7 @@
 import React from 'react'
 import {StyleSheet, Text, View} from 'react-native'
 import {colors} from '../../style/colors'
-import {SPACING} from '../../style/spacing'
+import {spacing} from '../../style/spacing'
 
 export const GoalCounterComponent = () => {
   const sessionsUntilGoal = 3
@@ -12,13 +12,13 @@ export const GoalCounterComponent = () => {
       <View style={styles.container}>
         <View style={styles.count_container}>
           <Text style={styles.count}>{sessionsUntilGoal}</Text>
-          <Text style={styles.text}>Weekly</Text>
-          <Text style={styles.text}>Goal</Text>
+          <Text style={styles.text_bold}>Weekly</Text>
+          <Text style={styles.text_bold}>Goal</Text>
         </View>
         <View style={styles.count_container}>
           <Text style={styles.count}>{sessionsCompleted}</Text>
-          <Text style={styles.text}>Completed</Text>
-          <Text style={styles.text}>Activities</Text>
+          <Text style={styles.text_bold}>Completed</Text>
+          <Text style={styles.text_bold}>Activities</Text>
         </View>
       </View>
       <Text adjustsFontSizeToFit numberOfLines={1} style={styles.text}>
@@ -32,10 +32,26 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: SPACING.m,
-    paddingBottom: SPACING.s,
+    paddingHorizontal: spacing.m,
+    paddingBottom: spacing.s,
   },
   count_container: {width: 100},
-  count: {fontSize: 50, textAlign: 'center', color: colors.yomentoWhite},
-  text: {textAlign: 'center', color: colors.yomentoWhite},
+  count: {
+    fontSize: 50,
+    textAlign: 'center',
+    color: colors.yomentoWhite,
+    fontFamily: 'HelveticaNeue-Bold',
+    fontWeight: 'bold',
+  },
+  text_bold: {
+    textAlign: 'center',
+    color: colors.yomentoWhite,
+    fontFamily: 'HelveticaNeue-Bold',
+    fontWeight: 'bold',
+  },
+  text: {
+    textAlign: 'center',
+    color: colors.yomentoWhite,
+    fontFamily: 'HelveticaNeue-LightItalic',
+  },
 })

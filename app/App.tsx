@@ -10,7 +10,7 @@ import {Navigation} from './ui/navigation/Navigation'
 export const App = () => {
   return (
     <SafeAreaProvider>
-      <StatusBar backgroundColor={colors.white} barStyle="light-content" />
+      <StatusBar backgroundColor={colors.yomentoNavy} barStyle="light-content" />
       <NavigationContainer ref={navigationRef => (navigationService.navigator = navigationRef)}>
         <Navigation />
       </NavigationContainer>

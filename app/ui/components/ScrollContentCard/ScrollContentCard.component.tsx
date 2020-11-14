@@ -1,7 +1,7 @@
 import React from 'react'
 import {ImageBackground, StyleSheet, TouchableWithoutFeedback, View} from 'react-native'
 import {Data} from '../../../dummyData/DummyData'
-import {SPACING} from '../../style/spacing'
+import {spacing} from '../../style/spacing'
 
 interface Props {
   data: Data
@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    marginHorizontal: SPACING.s,
+    marginRight: spacing.m,
   },
 })

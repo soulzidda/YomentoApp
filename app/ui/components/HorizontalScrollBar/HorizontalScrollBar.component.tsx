@@ -1,8 +1,8 @@
 import React from 'react'
-import {FlatList, Text, View} from 'react-native'
+import {FlatList, StyleSheet, Text, View} from 'react-native'
 import {ScrollContentCard} from '../ScrollContentCard/ScrollContentCard.component'
 import {colors} from '../../style/colors'
-import {SPACING} from '../../style/spacing'
+import {spacing} from '../../style/spacing'
 
 import {DataSetOne, DataSetTwo} from '../../../dummyData/DummyData'
 
@@ -28,16 +28,28 @@ export const HorizontalScrollBar = (props: ScrollBarProps) => {
   }
 
   return (
-    <View>
-      <Text style={{color: colors.yomentoWhite, paddingBottom: SPACING.s}}>{header}</Text>
+    <View style={{flexDirection: 'column'}}>
+      <Text style={styles.header}>{header}</Text>
       <FlatList
-        style={{height: height}}
+        contentContainerStyle={{height: height}}
         data={data}
         keyExtractor={item => item.id}
         horizontal
+        alwaysBounceHorizontal
+        showsHorizontalScrollIndicator={false}
         viewabilityConfig={{viewAreaCoveragePercentThreshold: 100}}
         renderItem={({item: data}) => <ScrollContentCard width={width} data={data} />}
       />
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  header: {
+    color: colors.yomentoWhite,
+    paddingBottom: spacing.s,
+    fontFamily: 'HelveticaNeue-Bold',
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+})
