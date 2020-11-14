@@ -1,8 +1,9 @@
 import React from 'react'
 
 import LinearGradient from 'react-native-linear-gradient'
-import {SafeAreaView, StyleSheet, View} from 'react-native'
+import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native'
 import {colors} from '../../style/colors'
+import {SPACING} from '../../style/spacing'
 
 interface Props {
   children: any
@@ -11,9 +12,11 @@ interface Props {
 export const Gradient = (props: Props) => {
   const {children} = props
   return (
-    <LinearGradient colors={[colors.yamatoNavy, colors.yamatoPurple]} style={styles.linearGradient}>
+    <LinearGradient
+      colors={[colors.yomentoNavy, colors.yomentoPurple]}
+      style={styles.linearGradient}>
       <SafeAreaView />
-      {children}
+      <ScrollView>{children}</ScrollView>
     </LinearGradient>
   )
 }

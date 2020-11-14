@@ -52,9 +52,9 @@ function YomentoTab() {
     <Tab.Navigator
       initialRouteName="home"
       tabBarOptions={{
-        activeTintColor: colors.yamatoWhite,
-        inactiveBackgroundColor: colors.yamatoPurple,
-        activeBackgroundColor: colors.yamatoPurple,
+        activeTintColor: colors.yomentoWhite,
+        inactiveBackgroundColor: colors.yomentoPurple,
+        activeBackgroundColor: colors.yomentoPurple,
       }}>
       <Tab.Screen
         name="home"

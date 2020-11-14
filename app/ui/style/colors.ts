@@ -1,5 +1,6 @@
 export enum colors {
-  yamatoNavy = '#0e0f3d',
-  yamatoPurple = '#1a1a73',
-  yamatoWhite = '#ffffff',
+  yomentoNavy = '#0e0f3d',
+  yomentoPurple = '#1e1b76',
+  yomentoWhite = '#ffffff',
+  yomentoBellBlue = '#057dff',
 }

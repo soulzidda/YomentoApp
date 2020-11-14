@@ -15,5 +15,5 @@ export const InsightScreen = () => {
 
 const styles = StyleSheet.create({
   content_container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
-  text: {color: colors.yamatoWhite},
+  text: {color: colors.yomentoWhite},
 })
