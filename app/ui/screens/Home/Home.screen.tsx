@@ -1,18 +1,19 @@
 import React from 'react'
-import {FlatList, SafeAreaView, StyleSheet, View} from 'react-native'
+import {StyleSheet, View} from 'react-native'
+import {Gradient} from '../../components/LinearGradient/LinearGradient.component'
+import {GoalCounter} from '../../components/GoalCounter/GoalCounter'
+import {HorizontalScrollBar} from '../../components/HorizontalScrollBar/HorizontalScrollBar'
 
 export const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <SafeAreaView />
+    <Gradient>
+      <View>
+        <GoalCounter />
+      </View>
 
-      <View>
-        <FlatList data={null} renderItem={null} horizontal />
-      </View>
-      <View>
-        <FlatList horizontal data={null} renderItem={null} />
-      </View>
-    </View>
+      <HorizontalScrollBar header={'Small horizontal scroll'} />
+      <HorizontalScrollBar header={'large horizontal scroll'} />
+    </Gradient>
   )
 }
 
