@@ -1,5 +1,5 @@
 # YomentoApp
-Yomento coding Test
+Yomento coding challenge
 
 # Note 
 
