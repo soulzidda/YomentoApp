@@ -8,71 +8,78 @@ export type Data = {
 export const DataSetOne: Data[] = [
   {
     id: '1',
-    name: 'Jeff',
+    name: 'Teamwork',
     imageUri: require('../assets/Images/beacon.jpg'),
-    description: 'my Name is Jeff',
+    description: 'Be the lighthouse for your team',
   },
   {
     id: '2',
-    name: 'James',
+    name: 'spaces',
     imageUri: require('../assets/Images/kepplar.jpg'),
-    description: 'my Name is James',
+    description: 'Be not afraid of empty spaces',
   },
   {
     id: '3',
-    name: 'Jack',
+    name: 'beach',
     imageUri: require('../assets/Images/stressLess.jpg'),
-    description: 'my Name is Jack',
+    description: 'Sometimes work should be like this',
   },
   {
     id: '4',
     name: 'Jill',
     imageUri: require('../assets/Images/meeting.jpg'),
-    description: 'my Name is Jill',
+    description: 'Learn to listen before you speak',
   },
   {
     id: '5',
-    name: 'Julie',
+    name: 'WorkAndPlay',
     imageUri: require('../assets/Images/workAndPlay.jpg'),
-    description: 'my Name is Julie',
+    description: 'Find the healthy medium',
   },
   {
     id: '6',
-    name: 'Janet',
+    name: 'Ground',
     imageUri: require('../assets/Images/stormTrooper.jpg'),
-    description: 'my Name is Janet',
+    description: 'The ground can be rough',
   },
 ]
 
 export const DataSetTwo: Data[] = [
   {
     id: '1',
-    name: 'Anthony',
+    name: 'Game',
     imageUri: require('../assets/Images/teamWork.jpg'),
-    description: 'my Name is Anthony',
+    description: 'The name of the game',
   },
   {
     id: '2',
     name: 'Kieran',
     imageUri: require('../assets/Images/leading.jpg'),
-    description: 'my Name is Kieran',
+    description: 'It can be lonely',
   },
   {
     id: '3',
-    name: 'Helen',
+    name: 'Boat',
     imageUri: require('../assets/Images/team.jpg'),
-    description: 'my Name is Helen',
+    description: 'It takes many',
   },
   {
     id: '4',
-    name: 'Zack',
+    name: 'CoWork',
     imageUri: require('../assets/Images/coworking.jpg'),
-    description: 'my Name is Zack',
+    description: 'Lead your colleagues',
   },
   {
     id: '5',
-    name: 'Tommy',
+    name: 'Time',
     imageUri: require('../assets/Images/coffeeBreak.jpg'),
-    description: 'my Name is Tommy',
+    description: 'Take time for you',
   },
 ]
+
+export const ReflectData: Data = {
+  id: '1',
+  name: 'Reflect',
+  imageUri: require('../assets/Images/thinking.jpg'),
+  description: 'Log your Reflections on your week',
+}

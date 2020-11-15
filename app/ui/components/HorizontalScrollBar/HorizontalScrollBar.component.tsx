@@ -13,17 +13,11 @@ interface ScrollBarProps {
 
 export const HorizontalScrollBar = (props: ScrollBarProps) => {
   const {header, size} = props
-  let width: number
-  let height: number
   let data
 
   if (size === 'small') {
-    width = 150
-    height = 120
     data = DataSetTwo
   } else {
-    width = 300
-    height = 220
     data = DataSetOne
   }
 
@@ -31,14 +25,13 @@ export const HorizontalScrollBar = (props: ScrollBarProps) => {
     <View style={{flexDirection: 'column'}}>
       <Text style={styles.header}>{header}</Text>
       <FlatList
-        contentContainerStyle={{height: height}}
         data={data}
         keyExtractor={item => item.id}
         horizontal
         alwaysBounceHorizontal
         showsHorizontalScrollIndicator={false}
         viewabilityConfig={{viewAreaCoveragePercentThreshold: 100}}
-        renderItem={({item: data}) => <ScrollContentCard width={width} data={data} />}
+        renderItem={({item: data}) => <ScrollContentCard size={size} data={data} />}
       />
     </View>
   )

@@ -3,4 +3,5 @@ export enum colors {
   yomentoPurple = '#1e1b76',
   yomentoWhite = '#ffffff',
   yomentoBellBlue = '#057dff',
+  yomentoGray = '#808080',
 }
