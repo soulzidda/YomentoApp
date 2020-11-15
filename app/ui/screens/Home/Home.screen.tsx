@@ -26,6 +26,7 @@ export const HomeScreen = () => {
         </View>
       </View>
       <View style={styles.quick_reflection_padding}>
+        <Text style={styles.header}>Quick start</Text>
         <QuickStart />
       </View>
       <View style={styles.quick_reflection_padding}>
