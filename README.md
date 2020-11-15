@@ -21,10 +21,6 @@ you may want to start the metro bundler automatically before running the applica
 2. After this has completed stay in the root Directory and use the command react-native run-android
 3. explore the app 
 
-# Note for android
-
-When i came back to test this later i could only run it though android studio. This may be a problem with my own terminal. It runs fine on Ios
-
 # Extra information
 
 The app was tested on simulater with the Iphone SE 2nd editon on xcode and the Pixel 2 on android studio 
