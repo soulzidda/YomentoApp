@@ -1,5 +1,4 @@
-# YomentoApp
-Yomento coding challenge
+# Yomento coding challenge
 
 # Note 
 
