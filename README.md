@@ -1,6 +1,6 @@
 # Yomento coding challenge
 
-# Note 
+Note 
 
 you may want to start the metro bundler automatically before running the application in this case run the following before running on Ios or Android
 
