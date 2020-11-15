@@ -1,7 +1,7 @@
 import React from 'react'
 
 import LinearGradient from 'react-native-linear-gradient'
-import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native'
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native'
 import {colors} from '../../style/colors'
 
 interface Props {

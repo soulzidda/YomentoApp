@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler'
 import React from 'react'
-import {SafeAreaView, StatusBar, View} from 'react-native'
+import {SafeAreaView, StatusBar} from 'react-native'
 import {NavigationContainer} from '@react-navigation/native'
 import {colors} from './ui/style/colors'
 import {navigationService} from './ui/navigation/Navigation.service'
