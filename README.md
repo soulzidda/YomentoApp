@@ -1,5 +1,8 @@
 # Yomento coding challenge
 
+The challenge was to recreate the front page of Yomento's app and to add functionality that would work with their style. This app is the result of my version of their front page 
+
+
 Note 
 
 you may want to start the metro bundler automatically before running the application in this case run the following before running on Ios or Android
